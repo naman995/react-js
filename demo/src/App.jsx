@@ -1,10 +1,10 @@
-import Userlist from "./components/Userlist";
-import Productlist from "./components/Productlist";
+import Person from "./components/person";
+import Product from "./components/Product";
 const App = () => {
   return (
     <main>
-      <Userlist />
-      <Productlist />
+      <Person name="Naman Raput" age="12" />
+      <Product name="I phone" price="799" />
     </main>
   );
 };
