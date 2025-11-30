@@ -1,21 +1,13 @@
-import WelcomeMessage from "./components/WelcomeMessage";
-import JSXRule from "./components/JSXRules";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Maincomponent from "./components/Maincomponent.jsx";
-// import Greeting from "./components/ex2/Greeting.jsx";
-import ProductInfo from "./components/ex2/ProductInfo.jsx";
-import Greeting from "./components/ex2/Greeting.jsx";
 const App = () => {
+  const number = [1, 2, 3, 4, 5];
   return (
-    <>
-      {/* <p>asdjfhjash</p> */}
-      {/* <Header />/ */}
-      {/* <Maincomponent /> */}
-      {/* <Footer /> */}
-      <Greeting />
-      <ProductInfo/>
-    </>
+    <main>
+      {number.map((number) => (
+        <ul key={number}>
+          <li>{number}</li>
+        </ul>
+      ))}
+    </main>
   );
 };
 
