@@ -1,11 +1,16 @@
-import Person from "./components/person";
+const ValidPassword = () => <h1>Valid Password</h1>;
+const InvalidPassword = () => <h1>Invalid Password</h1>;
+
+const Password = ({ isValid }) => {
+  if (isValid) {
+    return <ValidPassword />;
+  }
+  return <InvalidPassword />;
+};
 const App = () => {
   return (
     <main>
-      <Person >
-        <p>This is data inside parent</p>
-         </Person>
-      
+      <Password isValid={false} />
     </main>
   );
 };
