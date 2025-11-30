@@ -1,10 +1,11 @@
 import Person from "./components/person";
-import Product from "./components/Product";
 const App = () => {
   return (
     <main>
-      <Person name="Naman Raput" age="12" />
-      <Product name="I phone" price="799" />
+      <Person >
+        <p>This is data inside parent</p>
+         </Person>
+      
     </main>
   );
 };
