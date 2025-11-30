@@ -1,8 +1,8 @@
-const Product = (props) => {
+const Product = ({ name, price }) => {
   return (
     <main>
-      <h2>Product Name: {props.name}</h2>
-      <p>Product Price: ${props.price}</p>
+      <h2>Product Name: {name}</h2>
+      <p>Product Price: ${price}</p>
     </main>
   );
 };
